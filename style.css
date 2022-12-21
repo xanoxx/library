@@ -1,0 +1,108 @@
+:root {
+    height: 100vh;
+
+    --color: black; /*rgb(30, 167, 30);*/
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(4, 320px) / repeat(5, 120px);
+    row-gap: 20px;
+    column-gap: 230px;
+    align-items: center;
+}
+
+.card {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color);
+    padding: 30px;
+    margin: 20px;
+    
+    width: 320px;
+    height: 120px;
+}
+
+.card > button {
+    width: 50%;
+    height: 20%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+#add {
+    position: fixed;
+    left: 95%;
+    top: 90%;
+
+    border: none;
+    background-color: var(--color);
+    color: white;
+
+    height: 60px;
+    line-height: 20px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 20px;
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+#form {
+    background-color: white;
+    font-family: Roboto;
+    font-size: 1rem;
+    border: 2px solid  var(--color);
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--color);
+    width: 80%;
+    position: fixed;
+    left: 5%;
+    top: 88%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+select {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: italic;    
+}
+
+input[type=submit] {
+    width: 100px;
+    margin-left: 50px;
+    background-color: var(--color);
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    border: none;
+    font-weight: 600;
+}
